@@ -1,5 +1,4 @@
 const { createServer } = require("http");
-#const express = require('express') (Only if you app uses express)
 const next = require("next");
 
 const port = process.env.PORT || 3000;
@@ -12,6 +11,6 @@ app.prepare().then(() => {
     handle(req, res);
   }).listen(port, (err) => {
     if (err) throw err;
-    console.log(`> Ready on <http://localhost>:${port}`);
+    console.log(`> Ready on http://localhost:${port}`);
   });
 });
